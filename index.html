@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#7d4bff" />
+  <meta name="description" content="Una sorpresa de amor, fe y ánimo para Yoangelis." />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+  <title>Para Yoangelis</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="ambient ambient-three"></div>
+  <canvas id="sparkleCanvas" aria-hidden="true"></canvas>
+
+  <main id="app" class="app-shell">
+    <header class="topbar" aria-label="Controles de la sorpresa">
+      <button id="backBtn" class="icon-btn" type="button" aria-label="Volver a la pantalla anterior">‹</button>
+      <div class="progress-wrap" aria-label="Progreso">
+        <div id="progressBar" class="progress-bar"></div>
+      </div>
+      <button id="soundBtn" class="icon-btn sound-btn" type="button" aria-label="Activar música suave">♫</button>
+    </header>
+
+    <section id="screen" class="screen" aria-live="polite"></section>
+
+    <nav class="bottom-nav" aria-label="Navegación">
+      <button id="homeBtn" class="nav-pill" type="button">Inicio</button>
+      <button id="emergencyBtn" class="nav-pill nav-pill-hot" type="button">Caja de calma</button>
+    </nav>
+  </main>
+
+  <template id="introTemplate">
+    <article class="card hero-card">
+      <p class="eyebrow">De Santiago, con amor y fe</p>
+      <h1>Yoangelis, Dios todavía está escribiendo tu historia.</h1>
+      <p class="lead">Esta página existe para recordarte algo cuando dudes: no estás sola, no eres mala por elegir tu paz y tus sueños también importan.</p>
+      <div class="hero-badges" aria-label="Personas que la aman">
+        <span>Dios te guía</span>
+        <span>Alcides te amó</span>
+        <span>Juana cree en ti</span>
+        <span>Santiago está contigo</span>
+      </div>
+      <button class="primary-action" data-next type="button">Toca aquí para empezar</button>
+      <p class="instruction">Ábrelo despacio, mi amor. Cada pantalla tiene algo para tocar, soltar o guardar en el corazón.</p>
+    </article>
+  </template>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
